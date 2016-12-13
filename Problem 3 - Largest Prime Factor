@@ -1,0 +1,18 @@
+# The prime factors of 13195 are 5, 7, 13 and 29.
+
+# What is the largest prime factor of the number 600851475143 ?
+
+tested = int(600851475143)
+
+def isprimefactor(a):
+    for i in range(int(a / 2), 1, -1):
+        if a % i == 0:
+            return False
+    return True
+
+for j in range(int(tested / 2), 1, -1):
+    if tested % j == 0:
+        b = j
+        if isprimefactor(b) is True:
+            print(b)
+            break
