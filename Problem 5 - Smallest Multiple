@@ -3,8 +3,8 @@
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 sought = 1
-initialfactor = 18
-factor = initialfactor
+largestfactor = 20
+factor = largestfactor
 
 while factor >= 1:
     if sought % factor == 0:
@@ -13,5 +13,5 @@ while factor >= 1:
             print(sought)
             break
     else:
-        factor = initialfactor
+        factor = largestfactor
         sought += 1
