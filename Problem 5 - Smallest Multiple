@@ -1,3 +1,17 @@
 # 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+sought = 1
+initialfactor = 18
+factor = initialfactor
+
+while factor >= 1:
+    if sought % factor == 0:
+        factor -= 1
+        if factor == 1:
+            print(sought)
+            break
+    else:
+        factor = initialfactor
+        sought += 1
